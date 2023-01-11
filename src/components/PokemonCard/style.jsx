@@ -3,27 +3,49 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: realtive;
   display: flex;
-  justify-content: end;
-  margin-right: 20px;
+  justify-content: space-around;
+  widht: 100%;
 `;
 
-export const DivRight = styled.div`
-  display: flex;
-  align-items: center;
-  width: 38%;
-  height: 55px;
-  margin: 10px 0;
-  padding: 5px 20px;
-  font-size: 24px;
-  font-weight: 700;
-  border-radius: 50px;
-  transition: 0.5 ease-in-out;
-
+export const DivCenter = styled.div`
+  background: #e84444;
+  border-radius: 10px;
+  transition: 0.35s ease-in-out;
   &:hover {
-    background: linear-gradient(132deg, #ff380c 40%, #272726 40%);
     cursor: pointer;
     color: white;
+    scale: 1.05;
   }
+`;
+
+export const PokeName = styled.div`
+  width: 300px;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  padding: 0 4px;
+  display: flex;
+  gap: 0 14px;
+  align-items: center;
+  border-radius: 10px;
+  background: linear-gradient(132deg, #ff380c 40%, #272726 40%);
+`;
+
+export const Circle = styled.div`
+  background: #fff;
+  margin: 8px auto;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  border-radius: 100%;
+`;
+
+export const PokeImg = styled.img`
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100px;
+  filter: drop-shadow(2px 4px 12px black);
 `;
 
 export const Show = styled.div`

@@ -6,7 +6,7 @@ export function PokeList() {
   const [allPokemons, setAllPokemons] = useState([]);
 
   const getAllPokmenons = async () => {
-    const url = "https://pokeapi.co/api/v2/pokemon?limit=649&offset=0";
+    const url = "https://pokeapi.co/api/v2/pokemon?limit=150&offset=0";
     const res = await fetch(url);
     const data = await res.json();
 

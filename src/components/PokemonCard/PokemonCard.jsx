@@ -2,7 +2,7 @@ import { useState } from "react";
 import pokeball from "../../assets/images/pokeballColor.png";
 import {
   Container,
-  DivRight,
+  DivCenter,
   PokeTitle,
   Show,
   ShowImg,
@@ -10,6 +10,9 @@ import {
   StatsLeft,
   StatsRight,
   Line,
+  PokeImg,
+  PokeName,
+  Circle,
 } from "./style";
 import { Modal } from "../modal/modal";
 
@@ -64,24 +67,20 @@ export function PokemonCard({
             </div>
           </Show>
         )}
-        <DivRight
-          onMouseEnter={() => setIsShow(true)}
-          onMouseLeave={() => setIsShow(false)}
-          onClick={modalHandler}
-        >
-          <img
-            src={image}
-            alt={name}
-            style={{ maxHeight: "50px", marginRight: "10px", width: "50px" }}
-          />
-          <p style={{ width: "270px" }}>No. {id}</p>
-          <p>{name}</p>
-          <img
-            src={pokeball}
-            alt="pokeball"
-            style={{ marginLeft: "auto", width: "40px" }}
-          />
-        </DivRight>
+        <DivCenter onClick={modalHandler}>
+          <PokeName>
+            <p>No. {id}</p>
+            <p>{name}</p>
+            <img
+              src={pokeball}
+              alt="pokeball"
+              style={{ marginLeft: "auto", width: "40px" }}
+            />
+          </PokeName>
+          <Circle>
+            <PokeImg src={image} alt={name} />
+          </Circle>
+        </DivCenter>
         {modalOpen && (
           <Modal
             id={id}
