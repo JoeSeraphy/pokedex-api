@@ -70,12 +70,8 @@ export function PokemonCard({
         <DivCenter onClick={modalHandler}>
           <PokeName>
             <p>No. {id}</p>
-            <p>{name}</p>
-            <img
-              src={pokeball}
-              alt="pokeball"
-              style={{ marginLeft: "auto", width: "40px" }}
-            />
+            <p style={{ margin: "0 auto" }}>{name}</p>
+            <img src={pokeball} alt="pokeball" style={{ width: "40px" }} />
           </PokeName>
           <Circle>
             <PokeImg src={image} alt={name} />

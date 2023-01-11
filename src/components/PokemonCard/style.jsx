@@ -19,16 +19,27 @@ export const DivCenter = styled.div`
 `;
 
 export const PokeName = styled.div`
-  width: 300px;
-  font-size: 24px;
-  font-weight: 700;
+  width: 260px;
+  font-size: 20px;
+  font-weight: 500;
   color: white;
   padding: 0 4px;
   display: flex;
-  gap: 0 14px;
+
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
   background: linear-gradient(132deg, #ff380c 40%, #272726 40%);
+
+  @media (max-width: 769px) {
+    width: 240px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 425px) {
+    width: 192px;
+    font-size: 14px;
+  }
 `;
 
 export const Circle = styled.div`
