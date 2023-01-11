@@ -1,11 +1,11 @@
 import { Container, Title, Circle, RedContainer } from "./style";
 
-export function Topbar() {
+export function Hearder() {
   return (
     <>
       <RedContainer />
       <Container>
-        <Circle></Circle>
+        <Circle />
         <Title>Pokédex</Title>
       </Container>
     </>

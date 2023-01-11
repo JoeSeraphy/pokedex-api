@@ -18,5 +18,17 @@
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
     "vite": "^4.0.0"
-  }
+  },
+  "description": "<p align=\"center\">\r     Consumindo a PokéAPi\r   <img alt=\"Cover\" src=\".github/cover.jpg\">\r </p>",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeSeraphy/pokedex-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeSeraphy/pokedex-api/issues"
+  },
+  "homepage": "https://github.com/JoeSeraphy/pokedex-api#readme"
 }
